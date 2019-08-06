@@ -55,7 +55,7 @@ router.put('/:id',validateUserIdAction, (req, res) => {
 
     async function validateUserIdAction(req,res,next) {
         const  {id}= req.params;
-        const user= await actionDb.get(id);
+        const user= await actiondB.get(id);
         if (user){
         req.user=user;
         next();
