@@ -31,5 +31,5 @@ module.exports = {
     return db('actions')
       .where('id', id)
       .del();
-  },
+  }
 };
